@@ -1,0 +1,26 @@
+doctype html
+html(lang='es')
+	head
+	title = title
+	body
+		h1 Registro de Sitios
+		form(method='POST', action='/registro')
+			label(for='nombre') Nombre:
+			input#nombre(type='text', name='nombre', placeholder='nombre')
+			label(for='descripcion') Descripcion:
+			input#descripcion(type='textarea', name='descripcion', placeholder='descripcion')
+			label(for='latitud') Latitud:
+			input#latitud(type='text', name='latitud', placeholder='latitud')
+			label(for='longitud') Longitud:
+			input#longitud(type='text', name='longitud', placeholder='longitud')
+			label(for='tipo') Tipo:
+			input#tipo(type='text', name='tipo', placeholder='tipo')
+			label(for='ciudad') Ciudad:
+			input#ciudad(type='text', name='ciudad', placeholder='ciudad')
+			label(for='servicios') Servicios:
+			input#nombre(type='textarea', name='servicios', placeholder='servicios')
+			label(for='direccion') Direccion:
+			input#direccion(type='text', name='direccion', placeholder='direccion')
+			label(for='imgurl') Imagen:
+			input#imgurl(type='text', name='imgurl', placeholder='imgurl')
+			input(type='submit', value='Enviar')
