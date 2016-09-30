@@ -15,6 +15,10 @@ input {font-family: arial, sans-serif;
 					font-size:15pt;
 					color: #08298A;
 					border-color: black;}
+label{font-family: arial, sans-serif;
+					font-size:15pt;
+					color: #08298A;
+}
 
 a {
   color: #00B7FF;
