@@ -3,40 +3,49 @@ extends layout
 block content
 		h1 Registro de Sitios
 		form(method='POST', action='/registro')
-			label(for='nombre') Nombre:
+			label(for='nombre') Nombre:  
 			input#nombre(type='text', name='nombre', placeholder='nombre')
 			<br>
 			<br>
-			label(for='descripcion') Descripcion:
+			<br>
+			label(for='descripcion') Descripcion:  
 			input#descripcion(type='textarea', name='descripcion', placeholder='descripcion')
 			<br>
 			<br>
-			label(for='latitud') Latitud:
+			<br>
+			label(for='latitud') Latitud:  
 			input#latitud(type='text', name='latitud', placeholder='latitud')
 			<br>
 			<br>
-			label(for='longitud') Longitud:
+			<br>
+			label(for='longitud') Longitud:  
 			input#longitud(type='text', name='longitud', placeholder='longitud')
 			<br>
 			<br>
-			label(for='tipo') Tipo:
+			<br>
+			label(for='tipo') Tipo:  
 			input#tipo(type='text', name='tipo', placeholder='tipo')
 			<br>
 			<br>
-			label(for='ciudad') Ciudad:
+			<br>
+			label(for='ciudad') Ciudad:  
 			input#ciudad(type='text', name='ciudad', placeholder='ciudad')
 			<br>
 			<br>
-			label(for='servicios') Servicios:
+			<br>
+			label(for='servicios') Servicios:  
 			input#nombre(type='textarea', name='servicios', placeholder='servicios')
 			<br>
 			<br>
-			label(for='direccion') Direccion:
+			<br>
+			label(for='direccion') Direccion:  
 			input#direccion(type='text', name='direccion', placeholder='direccion')
 			<br>
 			<br>
-			label(for='imgurl') Imagen:
+			<br>
+			label(for='imgurl') Imagen:  
 			input#imgurl(type='text', name='imgurl', placeholder='imgurl')
+			<br>
 			<br>
 			<br>
 			input(type='submit', value='Enviar')
