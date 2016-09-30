@@ -1,8 +1,6 @@
-doctype html
-html(lang='es')
-	head
-	title = title
-	body
+extends layout
+
+block content
 		h1 Registro de Sitios
 		form(method='POST', action='/registro')
 			label(for='nombre') Nombre:
