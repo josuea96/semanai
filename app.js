@@ -9,19 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var port = process.env.PORT||8000;
 
-var stormpath = require('express-stormpath');
 var app = express();
-
-app.use(stormpath.init(app, {
-  // Optional configuration options.
-}));
-
-app.listen(3000);
-
-// Stormpath will let you know when it's ready to start authenticating users.
-app.on('stormpath.ready', function () {
-  console.log('Stormpath Ready!');
-});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
