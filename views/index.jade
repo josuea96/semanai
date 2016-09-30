@@ -3,4 +3,21 @@ extends layout
 block content
   h1= title
   p Bienvenidos a iTurismo
-  
+ 
+    header
+        .contenedor
+            h1 #{title}
+            //input#menu-bar(type='checkbox')
+            label.icon-menu(for='menu-bar', src='icon-menu.jpeg')
+                nav.menu
+                ul
+                    li
+                        a(href='/menu') Home
+                    li
+                        a(href='/places') Sites
+                    li
+                        a(href='/') Log out
+    h1= title
+    p Welcome to #{title}
+    form(method='GET', action='/login')
+        input(type='submit', value='Log In')
