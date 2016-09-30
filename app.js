@@ -11,6 +11,14 @@ var port = process.env.PORT||8000;
 
 var app = express();
 
+app.use(stormpath.init(app, {
+  website: true
+}));
+
+app.on('stormpath.ready', function() {
+  app.listen(3000);
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
